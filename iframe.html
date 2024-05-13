@@ -2,22 +2,24 @@
 <html>
 <head>
     <title>Booking Taxi</title>
-    <style type="text/css">
-        /* css code goes here */
-        .frame-area {
-  display: block;
-  width: 100%;  /* RESPONSIVE WIDTH */
-  max-width: 400px;
-  height: 300px;
-  overflow: auto;  /* EDIT TO hidden FOR NO SCROLLBAR */
-  border: #999999 1px solid;
-  margin: 0px;
-  padding: 0px;
-  }
-      </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS code for the iframe and body */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <iframe name="Framename" src="./index.html" width="400" height="200" frameborder="0" scrolling="auto" class="frame-area">
-    </iframe>
+    <iframe name="Framename" src="./index.html"></iframe>
 </body>
 </html>
